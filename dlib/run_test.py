@@ -1,8 +1,5 @@
-import os
-
 import cv2
 from imutils import paths
-
 from recognize_faces_image import recognize_image
 from recognize_faces_video import recognize_video
 
@@ -23,4 +20,9 @@ for imagePath in imagePaths:
     except Exception as e:
         print(f"[ERROR] {e}")
 
+recognize_video(
+    video_path="../test_video.mp4",
+    encodings_path="encodings.pickle",
+    output_width=1280,
+)
 cv2.destroyAllWindows()

@@ -5,7 +5,7 @@ import face_recognition
 
 
 def recognize_image(
-    encodings_path, image_path, detection_method="cnn", tolerance=0.4
+    encodings_path, image_path, detection_method="cnn", threshold=0.4
 ):
     """
     Nhận diện khuôn mặt trên ảnh.
@@ -36,7 +36,7 @@ def recognize_image(
     names = []
     for encoding in encodings:
         matches = face_recognition.compare_faces(
-            data["encodings"], encoding, tolerance
+            data["encodings"], encoding, threshold
         )
         name = "Unknown"
         if True in matches:

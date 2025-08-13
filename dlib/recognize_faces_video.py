@@ -1,17 +1,19 @@
+import pickle
+
+import cv2
+import face_recognition
+import imutils
+
+
 def recognize_video(
     video_path,
     encodings_path,
     output_path=None,
     detection_method="cnn",
     display=1,
-    tolerance=0.42,
+    threshold=0.42,
     output_width=1280,
 ):
-    import pickle
-
-    import cv2
-    import face_recognition
-    import imutils
 
     # Load encodings
     print("[INFO] loading encodings...")
@@ -46,7 +48,7 @@ def recognize_video(
         names = []
         for encoding in encodings:
             matches = face_recognition.compare_faces(
-                data["encodings"], encoding, tolerance
+                data["encodings"], encoding, threshold
             )
             name = "Unknown"
             if True in matches:

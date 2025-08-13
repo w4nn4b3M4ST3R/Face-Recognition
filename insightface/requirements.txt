@@ -1,0 +1,13 @@
+# Core dependencies
+insightface>=0.7.3
+numpy>=1.22.3
+opencv-python>=4.5.5
+Cython>=0.29.28
+cmake>=3.22.3
+
+# ONNX backend (choose one)
+onnxruntime>=1.14.1           # For CPU
+# onnxruntime-gpu>=1.14.1     # Uncomment if using GPU
+
+# Optional: for visualization or debugging
+matplotlib>=3.5.1

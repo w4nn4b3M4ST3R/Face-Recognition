@@ -1,0 +1,8 @@
+# Core dependencies
+face_recognition>=1.3.0
+dlib>=19.22.0
+numpy>=1.22.0
+opencv-python>=4.5.5
+
+# Optional: for image display and debugging
+matplotlib>=3.5.1
