@@ -1,5 +1,5 @@
 # Hệ thống Nhận diện Khuôn mặt FaceQTH bằng MTCNN và FaceNet  
-**Tác giả**: Võ Phúc Thịnh  
+**Tác giả**: FaceQTH  
 **Ngày**: 31/08/2025  
 
 ---
@@ -150,5 +150,5 @@ FaceQTH/
 - **Scikit-learn** – cộng đồng phát triển đã cung cấp công cụ SVM và nhiều thuật toán machine learning tiện lợi.  
 - **Streamlit & Streamlit-webrtc** – đội ngũ Streamlit đã giúp việc xây dựng giao diện và chạy real-time camera trở nên dễ dàng.  
 - **TensorFlow – framework** hỗ trợ huấn luyện và triển khai mô hình deep learning.  
-**Tác giả**: *Võ Phúc Thịnh*  
+**Tác giả**: *FaceQTH*  
 Nếu có thắc mắc, đề xuất hay muốn đóng góp, bạn có thể mở **Issue** hoặc **Pull Request** trực tiếp trên GitHub repository.
