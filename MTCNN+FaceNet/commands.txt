@@ -1,7 +1,0 @@
-install weight và lưu vào mục Models
-install requirements: pip install -r requirements.txt
-cắt riêng khuôn mặt: python src/align_dataset_mtcnn.py  Dataset/FaceData/raw Dataset/FaceData/processed --image_size 160 --margin 32  --random_order --gpu_memory_fraction 0.25
-model training: python src/classifier.py TRAIN Dataset/FaceData/processed Models/20180402-114759.pb Models/facemodel.pkl --batch_size 1000
-run live mode: python src/face_rec_cam.py
-run video mode: python src/face_rec.py --path video/video_testing.mp4
-lúc run live mode, có thể press n để thêm new user, press c để capture new data, đủ 20 ảnh sẽ dừng. press q để quit
